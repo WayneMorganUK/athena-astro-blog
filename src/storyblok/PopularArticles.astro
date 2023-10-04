@@ -6,7 +6,7 @@ const { blok } = Astro.props;
 let articles = blok.articles;
 ---
 
-<section class="mx-6 my-12" {...storyblokEditable(blok)}>
+<section class="container mx-auto my-12" {...storyblokEditable(blok)}>
   <h2 class="text-6xl text-[#50b0ae] font-bold text-center mb-12">
     {blok.headline}
   </h2>

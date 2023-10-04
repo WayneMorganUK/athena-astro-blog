@@ -7,6 +7,7 @@ const renderedRichText = renderRichText(blok.content);
 
 <article {...storyblokEditable(blok)}>
   <img
+    transition:name={blok.image.filename}
     class="w-full h-[360px] lg:h-[450px] object-cover"
     alt={blok.image.alt}
     src={`${blok.image.filename}/m/1600x0`}

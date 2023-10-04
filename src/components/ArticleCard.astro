@@ -1,10 +1,12 @@
 ---
+import { Image } from "astro:assets";
 const { article } = Astro.props;
 ---
 
 <article class="column feature bg-gray-100 rounded">
   <img
     class="object-cover object-center w-full lg:h-48 md:h-36 rounded"
+    transition:name={article.image.filename}
     src={`${article.image.filename}/m/360x240`}
     alt={article.image.alt}
   />
